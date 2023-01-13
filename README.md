@@ -111,7 +111,7 @@ echo " continuing...."
 Можно использовать так же  dracut -f -v
 
 Вывод команды lsinitrd -m /boot/initramfs-$(uname -r).img
-
+```text
 Image: /boot/initramfs-3.10.0-1160.el7.x86_64.img: 21M
 ========================================================================
 Early CPIO image
@@ -129,6 +129,7 @@ dracut modules:
 bash
 test
 ....
+```
 Так же вывод каманды lsinitrd -m /boot/initramfs-$(uname -r).img | grep test
 [root@localhost ~]#  lsinitrd -m /boot/initramfs-$(uname -r).img | grep test
 test
